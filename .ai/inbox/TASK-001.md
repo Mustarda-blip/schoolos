@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Criar a infraestrutura inicial para permitir colaboração organizada entre ChatGPT, Blackbox AI e Lovable no desenvolvimento do SchoolOS.
+Criar a infraestrutura inicial para permitir colaboração organizada entre ChatGPT, Claude e Lovable no desenvolvimento do SchoolOS.
 
 ## Product Owner
 
@@ -14,7 +14,7 @@ ChatGPT
 
 ## Implementação
 
-Blackbox AI
+Claude
 
 ## UI/UX
 
@@ -38,16 +38,27 @@ IN_PROGRESS
 - Preparar o repositório para comunicação assíncrona entre os agentes.
 - Definir caminho para futura automação em tempo real via GitHub Actions/MCP/orquestrador.
 
-## Critérios de conclusão
+## Progresso
 
-- Estrutura `.ai` criada.
-- Protocolo documentado.
+- Protocolo `.ai/` criado.
 - Instruções de agente disponíveis na raiz.
-- Templates de relatório e revisão disponíveis.
-- Git funcionando.
-- Build funcionando.
-- Nenhuma funcionalidade existente quebrada.
+- Templates de relatório/revisão disponíveis.
+- Protótipo visual do AI Collaboration Hub criado em `src/pages/AICollaboration.tsx`.
+- Estilos responsivos criados em `src/pages/AICollaboration.css`.
+- Rota `/ai-collaboration` adicionada ao `App.tsx`.
+- Hub inclui discussão, tarefas, decisões, agentes, branch e contexto compartilhado.
+
+## Validação pendente
+
+Executar localmente na branch `feature/ai-collaboration`:
+
+```bash
+npm run build
+npm run lint
+```
+
+Se houver erros relacionados ao protótipo, corrigir antes de considerar a tarefa concluída.
 
 ## Próxima etapa
 
-Configurar Blackbox e Lovable para consumir o protocolo e registrar trabalho no `.ai/`. Depois, implementar a camada de automação que observa tarefas, relatórios e bloqueios.
+Configurar Claude e Lovable para consumir o protocolo e registrar trabalho no `.ai/`. Depois, implementar a camada de automação que observa tarefas, relatórios e bloqueios.
